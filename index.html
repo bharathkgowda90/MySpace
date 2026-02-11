@@ -3,26 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Principal Product Designer Portfolio - Creating meaningful digital experiences through thoughtful design">
-    <title>Principal Product Designer | Portfolio</title>
+    <meta name="description" content="Product Designer Portfolio">
+    <title>Rachel How - Product Designer</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="nav">
         <div class="container">
-            <div class="nav-wrapper">
-                <a href="index.html" class="logo">Portfolio</a>
-                <ul class="nav-menu">
-                    <li><a href="#work" class="nav-link">Work</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#process" class="nav-link">Process</a></li>
-                    <li><a href="#contact" class="nav-link btn-contact">Contact</a></li>
-                </ul>
-                <button class="hamburger" aria-label="Toggle menu">
+            <div class="nav-content">
+                <a href="/" class="logo">Rachel How</a>
+                <div class="nav-links">
+                    <a href="#work">Work</a>
+                    <a href="#about">About</a>
+                    <a href="#contact" class="btn-gradient">Contact</a>
+                </div>
+                <button class="mobile-menu-btn" aria-label="Menu">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -31,287 +30,190 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section class="hero">
         <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    Principal Product Designer crafting
-                    <span class="highlight">meaningful experiences</span>
-                    for millions of users
-                </h1>
-                <p class="hero-subtitle">
-                    I'm a design leader specializing in end-to-end product design,
-                    design systems, and creating scalable solutions for complex problems.
-                </p>
-                <div class="hero-cta">
-                    <a href="#work" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
-                </div>
-            </div>
+            <h1 class="hero-title">Product Designer & Webflow Developer</h1>
+            <p class="hero-subtitle">
+                I help startups and businesses create beautiful digital products
+                that users love. Currently based in Malaysia.
+            </p>
         </div>
     </section>
 
-    <!-- Featured Work Section -->
-    <section id="work" class="work-section">
+    <!-- Work Section -->
+    <section id="work" class="work">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <p class="section-subtitle">A selection of recent product design work</p>
+            <h2 class="section-title">Selected Work</h2>
 
-            <!-- Project 1 -->
-            <article class="project-card">
-                <div class="project-image">
-                    <div class="placeholder-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                        <span class="placeholder-text">Enterprise Dashboard</span>
+            <div class="project-grid">
+                <!-- Project 1 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="placeholder-img" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <span>Project Image</span>
+                        </div>
                     </div>
-                </div>
-                <div class="project-content">
-                    <span class="project-tag">Enterprise SaaS</span>
-                    <h3 class="project-title">Redesigning Analytics Dashboard for Enterprise Users</h3>
-                    <p class="project-description">
-                        Led the complete redesign of an enterprise analytics platform, improving data visualization
-                        and reducing time-to-insight by 45%. Designed for scalability across 50,000+ users.
-                    </p>
-                    <ul class="project-highlights">
-                        <li>45% reduction in time-to-insight</li>
-                        <li>Increased user engagement by 60%</li>
-                        <li>Improved data accuracy perception by 35%</li>
-                    </ul>
-                    <div class="project-tags">
-                        <span class="tag">UX Research</span>
-                        <span class="tag">UI Design</span>
-                        <span class="tag">Data Visualization</span>
-                        <span class="tag">Design System</span>
+                    <div class="project-info">
+                        <h3>E-Commerce Platform Redesign</h3>
+                        <p>Complete redesign of an e-commerce platform, focusing on improving user experience and increasing conversion rates.</p>
+                        <div class="project-tags">
+                            <span>UI/UX Design</span>
+                            <span>User Research</span>
+                            <span>Prototyping</span>
+                        </div>
                     </div>
-                    <a href="#" class="project-link">View Case Study →</a>
-                </div>
-            </article>
+                </article>
 
-            <!-- Project 2 -->
-            <article class="project-card reverse">
-                <div class="project-image">
-                    <div class="placeholder-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
-                        <span class="placeholder-text">Mobile App</span>
+                <!-- Project 2 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="placeholder-img" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <span>Project Image</span>
+                        </div>
                     </div>
-                </div>
-                <div class="project-content">
-                    <span class="project-tag">Mobile Experience</span>
-                    <h3 class="project-title">Healthcare App for Patient Engagement</h3>
-                    <p class="project-description">
-                        Designed a mobile-first healthcare platform that empowers patients to manage their health journey.
-                        Focused on accessibility and inclusivity for diverse user groups.
-                    </p>
-                    <ul class="project-highlights">
-                        <li>90% user satisfaction score</li>
-                        <li>WCAG AAA accessibility compliance</li>
-                        <li>200k+ active monthly users</li>
-                    </ul>
-                    <div class="project-tags">
-                        <span class="tag">Mobile Design</span>
-                        <span class="tag">Accessibility</span>
-                        <span class="tag">User Research</span>
-                        <span class="tag">Prototyping</span>
+                    <div class="project-info">
+                        <h3>SaaS Dashboard Design</h3>
+                        <p>Designed a comprehensive dashboard for a B2B SaaS product, enabling users to manage their workflows efficiently.</p>
+                        <div class="project-tags">
+                            <span>Dashboard Design</span>
+                            <span>Data Visualization</span>
+                            <span>Design System</span>
+                        </div>
                     </div>
-                    <a href="#" class="project-link">View Case Study →</a>
-                </div>
-            </article>
+                </article>
 
-            <!-- Project 3 -->
-            <article class="project-card">
-                <div class="project-image">
-                    <div class="placeholder-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
-                        <span class="placeholder-text">Design System</span>
+                <!-- Project 3 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="placeholder-img" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <span>Project Image</span>
+                        </div>
                     </div>
-                </div>
-                <div class="project-content">
-                    <span class="project-tag">Design Systems</span>
-                    <h3 class="project-title">Building a Scalable Design System</h3>
-                    <p class="project-description">
-                        Created and implemented a comprehensive design system for a fintech company,
-                        enabling 20+ product teams to ship features 3x faster while maintaining consistency.
-                    </p>
-                    <ul class="project-highlights">
-                        <li>3x faster feature development</li>
-                        <li>Used by 20+ product teams</li>
-                        <li>90% design consistency score</li>
-                    </ul>
-                    <div class="project-tags">
-                        <span class="tag">Design Systems</span>
-                        <span class="tag">Component Library</span>
-                        <span class="tag">Documentation</span>
-                        <span class="tag">Figma</span>
+                    <div class="project-info">
+                        <h3>Mobile Banking App</h3>
+                        <p>Created a modern mobile banking experience with focus on security, ease of use, and financial management.</p>
+                        <div class="project-tags">
+                            <span>Mobile Design</span>
+                            <span>iOS & Android</span>
+                            <span>Fintech</span>
+                        </div>
                     </div>
-                    <a href="#" class="project-link">View Case Study →</a>
-                </div>
-            </article>
+                </article>
 
-            <!-- Project 4 -->
-            <article class="project-card reverse">
-                <div class="project-image">
-                    <div class="placeholder-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
-                        <span class="placeholder-text">E-commerce</span>
+                <!-- Project 4 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="placeholder-img" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                            <span>Project Image</span>
+                        </div>
                     </div>
-                </div>
-                <div class="project-content">
-                    <span class="project-tag">E-commerce</span>
-                    <h3 class="project-title">Reimagining the Checkout Experience</h3>
-                    <p class="project-description">
-                        Led design efforts to streamline the checkout flow for a major e-commerce platform,
-                        reducing cart abandonment and increasing conversion rates significantly.
-                    </p>
-                    <ul class="project-highlights">
-                        <li>25% reduction in cart abandonment</li>
-                        <li>18% increase in conversion rate</li>
-                        <li>$12M additional annual revenue</li>
-                    </ul>
-                    <div class="project-tags">
-                        <span class="tag">UX Design</span>
-                        <span class="tag">A/B Testing</span>
-                        <span class="tag">Conversion Optimization</span>
-                        <span class="tag">User Flows</span>
+                    <div class="project-info">
+                        <h3>Healthcare Web Platform</h3>
+                        <p>Designed a patient-centered healthcare platform connecting patients with doctors through telemedicine.</p>
+                        <div class="project-tags">
+                            <span>Web Design</span>
+                            <span>Healthcare</span>
+                            <span>Accessibility</span>
+                        </div>
                     </div>
-                    <a href="#" class="project-link">View Case Study →</a>
-                </div>
-            </article>
+                </article>
+
+                <!-- Project 5 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="placeholder-img" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                            <span>Project Image</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Design System Creation</h3>
+                        <p>Built a comprehensive design system for a growing startup, enabling faster product development and consistency.</p>
+                        <div class="project-tags">
+                            <span>Design Systems</span>
+                            <span>Component Library</span>
+                            <span>Documentation</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 6 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="placeholder-img" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);">
+                            <span>Project Image</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Social Media App</h3>
+                        <p>Designed a niche social networking app focused on creative professionals and portfolio sharing.</p>
+                        <div class="project-tags">
+                            <span>Mobile App</span>
+                            <span>Social Features</span>
+                            <span>Community</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about-section">
+    <section id="about" class="about">
         <div class="container">
             <div class="about-grid">
+                <div class="about-content">
+                    <h2>About Me</h2>
+                    <p>
+                        I'm Rachel How, a freelance product designer and Webflow developer based in Malaysia.
+                        I specialize in creating beautiful, functional digital experiences for startups and established businesses.
+                    </p>
+                    <p>
+                        With over 8 years of experience in UI/UX design, I've helped numerous clients transform
+                        their ideas into successful products. My approach combines user research, strategic thinking,
+                        and attention to detail.
+                    </p>
+                    <p>
+                        When I'm not designing, I enjoy sharing knowledge about design, solopreneurship,
+                        and building products as an independent creator.
+                    </p>
+
+                    <h3>What I Do</h3>
+                    <ul class="services-list">
+                        <li>UI/UX Design</li>
+                        <li>Product Design</li>
+                        <li>Webflow Development</li>
+                        <li>Design Systems</li>
+                        <li>User Research</li>
+                        <li>Prototyping</li>
+                    </ul>
+                </div>
                 <div class="about-image">
                     <div class="placeholder-avatar">
-                        <span class="avatar-text">Designer</span>
+                        <span>Profile</span>
                     </div>
-                </div>
-                <div class="about-content">
-                    <h2 class="section-title">About Me</h2>
-                    <p class="about-text">
-                        I'm a Principal Product Designer with over 12 years of experience creating
-                        user-centered digital experiences. I specialize in leading design teams,
-                        building design systems, and solving complex product challenges.
-                    </p>
-                    <p class="about-text">
-                        My approach combines strategic thinking with hands-on design work. I believe
-                        great design emerges from deep user understanding, cross-functional collaboration,
-                        and iterative refinement.
-                    </p>
-                    <p class="about-text">
-                        Currently, I'm focused on designing products that make technology more accessible
-                        and empowering for everyone.
-                    </p>
-
-                    <h3 class="subsection-title">Expertise</h3>
-                    <div class="expertise-grid">
-                        <div class="expertise-item">
-                            <h4>Product Design</h4>
-                            <p>End-to-end product design from research to high-fidelity prototypes</p>
-                        </div>
-                        <div class="expertise-item">
-                            <h4>Design Systems</h4>
-                            <p>Building and scaling design systems for enterprise products</p>
-                        </div>
-                        <div class="expertise-item">
-                            <h4>UX Research</h4>
-                            <p>User interviews, usability testing, and data-driven insights</p>
-                        </div>
-                        <div class="expertise-item">
-                            <h4>Design Leadership</h4>
-                            <p>Mentoring designers and establishing design culture</p>
-                        </div>
-                    </div>
-
-                    <h3 class="subsection-title">Experience</h3>
-                    <div class="experience-list">
-                        <div class="experience-item">
-                            <h4>Principal Product Designer</h4>
-                            <p class="company">Tech Company · 2021 - Present</p>
-                            <p>Leading design for core product features and design system</p>
-                        </div>
-                        <div class="experience-item">
-                            <h4>Senior Product Designer</h4>
-                            <p class="company">SaaS Startup · 2018 - 2021</p>
-                            <p>Designed enterprise dashboard and mobile applications</p>
-                        </div>
-                        <div class="experience-item">
-                            <h4>Product Designer</h4>
-                            <p class="company">Digital Agency · 2014 - 2018</p>
-                            <p>Worked with diverse clients on web and mobile products</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Process Section -->
-    <section id="process" class="process-section">
-        <div class="container">
-            <h2 class="section-title">Design Process</h2>
-            <p class="section-subtitle">How I approach product design challenges</p>
-
-            <div class="process-grid">
-                <div class="process-step">
-                    <div class="step-number">01</div>
-                    <h3>Discover</h3>
-                    <p>Understanding user needs, business goals, and technical constraints through research and stakeholder interviews.</p>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">02</div>
-                    <h3>Define</h3>
-                    <p>Synthesizing insights to define problems, create user personas, and establish success metrics.</p>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">03</div>
-                    <h3>Ideate</h3>
-                    <p>Exploring multiple solutions through sketching, wireframing, and collaborative design sessions.</p>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">04</div>
-                    <h3>Design</h3>
-                    <p>Creating high-fidelity designs, prototypes, and specifications for development teams.</p>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">05</div>
-                    <h3>Test</h3>
-                    <p>Validating designs through usability testing, gathering feedback, and iterating based on insights.</p>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">06</div>
-                    <h3>Deliver</h3>
-                    <p>Collaborating with engineers during implementation and measuring impact post-launch.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-section">
+    <section id="contact" class="contact">
         <div class="container">
             <div class="contact-content">
-                <h2 class="section-title">Let's Work Together</h2>
-                <p class="contact-subtitle">
-                    I'm always interested in hearing about new opportunities,
-                    collaborations, or just chatting about design.
+                <h2>Let's Work Together</h2>
+                <p>
+                    I'm currently available for freelance projects and collaborations.
+                    Feel free to reach out if you'd like to work together.
                 </p>
                 <div class="contact-methods">
-                    <a href="mailto:hello@designer.com" class="contact-method">
-                        <span class="method-label">Email</span>
-                        <span class="method-value">hello@designer.com</span>
-                    </a>
-                    <a href="https://linkedin.com" target="_blank" class="contact-method">
-                        <span class="method-label">LinkedIn</span>
-                        <span class="method-value">Connect with me</span>
-                    </a>
-                    <a href="https://twitter.com" target="_blank" class="contact-method">
-                        <span class="method-label">Twitter</span>
-                        <span class="method-value">@designer</span>
-                    </a>
-                    <a href="https://dribbble.com" target="_blank" class="contact-method">
-                        <span class="method-label">Dribbble</span>
-                        <span class="method-value">View my shots</span>
-                    </a>
+                    <a href="mailto:hello@rachelhow.com" class="btn-gradient">Send me an email</a>
+                    <div class="social-links">
+                        <a href="#" target="_blank">LinkedIn</a>
+                        <a href="#" target="_blank">Twitter</a>
+                        <a href="#" target="_blank">Dribbble</a>
+                        <a href="#" target="_blank">Instagram</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -320,15 +222,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2026 Principal Product Designer. All rights reserved.</p>
-                <div class="footer-links">
-                    <a href="#work">Work</a>
-                    <a href="#about">About</a>
-                    <a href="#process">Process</a>
-                    <a href="#contact">Contact</a>
-                </div>
-            </div>
+            <p>&copy; 2026 Rachel How. All rights reserved.</p>
         </div>
     </footer>
 
