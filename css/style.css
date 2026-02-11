@@ -83,8 +83,15 @@ ul {
 .rh-logo {
   width: 48px;
   height: 48px;
-  background: #000;
-  border-radius: 8px;
+  display: block;
+  object-fit: contain;
+}
+
+.rh-pill {
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+  object-fit: contain;
 }
 
 .frosty-menu {

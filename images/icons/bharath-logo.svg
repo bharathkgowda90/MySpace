@@ -1,0 +1,13 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="#000000"/>
+
+  <!-- Letter B -->
+  <path d="M60 60 L60 140 L85 140 Q105 140 105 125 Q105 115 95 112.5 Q105 110 105 100 Q105 85 85 85 L70 85 L70 95 L82 95 Q90 95 90 102 Q90 109 82 109 L70 109 L70 119 L85 119 Q95 119 95 127 Q95 130 85 130 L70 130 L70 60 Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Letter K -->
+  <path d="M115 60 L115 140 L125 140 L125 102 L140 140 L152 140 L135 100 L150 60 L138 60 L125 95 L125 60 Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Decorative element (line under letters) -->
+  <rect x="60" y="145" width="90" height="2" fill="#FFFFFF" opacity="0.5"/>
+</svg>
