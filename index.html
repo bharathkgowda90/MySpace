@@ -15,7 +15,7 @@
     <meta property="og:type" content="website" />
     <meta content="summary_large_image" name="twitter:card" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <link href="https://cdn.prod.website-files.com/60c5f64abe141da7260da0b9/css/rachel-how.webflow.shared.00a91571d.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
     <style>
       @media (min-width:992px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="5a52ea51-eb95-dfaf-fe5d-dfb23e15e9ec"] {-webkit-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}}@media (max-width:991px) and (min-width:768px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="5a52ea51-eb95-dfaf-fe5d-dfb23e15e9ec"] {-webkit-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}}@media (max-width:767px) and (min-width:480px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="5a52ea51-eb95-dfaf-fe5d-dfb23e15e9ec"] {-webkit-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}}@media (max-width:479px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="5a52ea51-eb95-dfaf-fe5d-dfb23e15e9ec"] {-webkit-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}}
     </style>
@@ -198,42 +198,6 @@
             value
           </div>
           <img src="https://cdn.prod.website-files.com/60c5f64abe141da7260da0b9/64d4bc79600bd67e51adc974_party-popper_1f389.png" loading="lazy" alt="" class="emoji-party-popper" />
-          <div class="html-embed w-embed w-script">
-            <script src="https://cdn.jsdelivr.net/npm/canvas-confetti">
-            </script>
-            <script>
-              const defaults = {
-    spread: 360,
-    ticks: 100,
-    gravity: 0,
-    decay: 0.94,
-    startVelocity: 30,
-  };
-
-  function shoot(x, y) {
-    const colors = ["#a864fd", "#29cdff", "#78ff44", "#ff718d", "#fdff6a"];
-    const shapes = ["circle", "square"];
-
-    confetti({
-      ...defaults,
-      particleCount: 30,
-      scalar: 1.2,
-      shapes,
-      colors,
-      origin: { x: x / window.innerWidth, y: y / window.innerHeight },
-    });
-  }
-
-  const partyPopperElement = document.querySelector('.emoji-party-popper');
-
-  partyPopperElement.addEventListener('click', (event) => {
-    const { clientX, clientY } = event;
-    shoot(clientX, clientY);
-    setTimeout(() => shoot(clientX, clientY), 100);
-    setTimeout(() => shoot(clientX, clientY), 200);
-  });
-            </script>
-          </div>
         </div>
       </div>
     </header>
@@ -518,22 +482,8 @@
         ✦ THINK LESS ✦ CREATE MORE
       </div>
     </div>
-    <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=60c5f64abe141da7260da0b9" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.prod.website-files.com/60c5f64abe141da7260da0b9/js/webflow.schunk.680376d705a1bdad.js" type="text/javascript">
-    </script>
-    <script src="https://cdn.prod.website-files.com/60c5f64abe141da7260da0b9/js/webflow.schunk.07e5ff034b932010.js" type="text/javascript">
-    </script>
-    <script src="https://cdn.prod.website-files.com/60c5f64abe141da7260da0b9/js/webflow.schunk.1723eb51af64791b.js" type="text/javascript">
-    </script>
-    <script src="https://cdn.prod.website-files.com/60c5f64abe141da7260da0b9/js/webflow.schunk.afb63642222729d6.js" type="text/javascript">
-    </script>
-    <script src="https://cdn.prod.website-files.com/60c5f64abe141da7260da0b9/js/webflow.f1dee9a7.91ca6045c0672c0c.js" type="text/javascript">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/circletype@2.3.0/dist/circletype.min.js">
-    </script>
-    <script>
-      new CircleType(document.getElementById('circletext'));
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/circletype@2.3.0/dist/circletype.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
