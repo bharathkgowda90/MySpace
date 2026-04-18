@@ -2978,11 +2978,10 @@ figcaption {
 }
 
 .heading-m {
-    margin-bottom: 12px;
-    font-family: Inter Tight, sans-serif;
-    font-size: 1.5rem;
-    font-weight: 600;
-    line-height: 140%
+    font-family: Satoshi, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 140%;
 }
 
 .heading-m.align-center {
@@ -3558,7 +3557,7 @@ figcaption {
 
 .work-featureimage.design {
     width: 80%;
-    right: -127px
+    right: -150px;
 }
 
 .work-featureimage.webflow {
@@ -3847,11 +3846,18 @@ figcaption {
 
 .section-heading {
     text-align: left;
-    margin-bottom: 8px;
-    font-family: Inter Tight, sans-serif;
+    font-family: Satoshi, sans-serif;
     font-size: 2.5rem;
     font-weight: 600;
-    line-height: 140%
+    line-height: 140%;
+}
+
+.other-section-heading {
+    text-align: center;
+    font-family: Satoshi, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 140%;
 }
 
 .section-heading.text-center {
@@ -3868,7 +3874,7 @@ figcaption {
 }
 
 .heading-left {
-    max-width: 70%
+    max-width: 100%;
 }
 
 .resources-grid {
@@ -4247,8 +4253,8 @@ figcaption {
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr;
     width: 100%;
-    max-width: 850px;
-    margin-top: 44px
+    max-width: 100%;
+    margin-top: 40px;
 }
 
 .cancel-button {
@@ -4377,7 +4383,7 @@ figcaption {
 
 .footer-wrapper {
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -4413,9 +4419,9 @@ figcaption {
     color: #1a1b1f;
     margin-top: 12px;
     margin-bottom: 6px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 16px;
+    line-height: 20px;
     text-decoration: none
 }
 
@@ -4786,11 +4792,10 @@ figcaption {
 
 .hero-subtitle {
     color: var(--gray-3);
-    max-width: 360px;
     font-family: Satoshi, sans-serif;
     font-size: 1.2rem;
     font-weight: 400;
-    line-height: 160%
+    line-height: 160%;
 }
 
 .hero-title-1 {
@@ -4805,9 +4810,9 @@ figcaption {
 .gooddesign-glow {
     opacity: .83;
     mix-blend-mode: overlay;
-    width: 70rem;
+    width: 65rem;
     position: absolute;
-    inset: 19% -56% 0% auto
+    inset: 0% -56% 0% auto;
 }
 
 .designprinciple-col {
@@ -4843,7 +4848,7 @@ figcaption {
 .designprinciple-desc {
     color: #616161;
     font-family: Satoshi, sans-serif;
-    font-size: .875rem;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 160%
 }
@@ -4851,8 +4856,7 @@ figcaption {
 .div-block-23 {
     grid-row-gap: 0px;
     flex-direction: column;
-    margin-top: 120px;
-    margin-bottom: 290px;
+    margin: 80px 0 40px 0;
     display: flex
 }
 
@@ -4950,15 +4954,14 @@ figcaption {
 }
 
 .card-expertise-light {
-    background-color: var(--white);
+    background-color: #f5f5f5;
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
-    border: 1px solid #e0e0e0;
-    border-radius: 20px;
+    border-radius: 32px;
     flex-direction: column;
     flex: 1;
     justify-content: space-between;
-    padding: 20px 20px 0;
+    padding: 32px 32px 0;
     transition: box-shadow .35s, transform .35s;
     display: flex;
     position: relative;
@@ -5081,12 +5084,8 @@ figcaption {
     margin-bottom: auto;
     padding-right: 10%;
     font-size: 1.4rem;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 2.1rem
-}
-
-.text-span-2 {
-    opacity: .38
 }
 
 .radius-16 {
@@ -6207,8 +6206,7 @@ figcaption {
     }
 
     .div-block-23 {
-        margin-top: 65px;
-        margin-bottom: 156px
+        margin: 32px 0;
     }
 
     .work-contact-cta-section {
@@ -6251,11 +6249,14 @@ figcaption {
         grid-column-gap: 8px;
         grid-row-gap: 8px
     }
+    .ada-trusted .card-content {
+        padding: 1.4rem !important;
+    }
 }
 
 @media screen and (max-width:479px) {
     .navbar {
-        padding: 4px 8px 4px 16px
+        padding: 8px 8px 8px 16px;
     }
 
     .footer-2-left {
@@ -6273,6 +6274,10 @@ figcaption {
         padding-right: 16px
     }
 
+    .designprinciple-wrapper{
+        padding-right: 0;
+    }
+
     .button.ml-12 {
         height: 48px;
         margin-top: 12px;
@@ -6284,8 +6289,12 @@ figcaption {
     }
 
     .footer-row {
-        flex-direction: column;
-        align-items: center
+        align-items: center;
+    }
+
+    .navbar-logo{
+        width: 40px;
+        height: 40px;
     }
 
     .container {
@@ -6314,7 +6323,7 @@ figcaption {
 
     .section {
         padding-top: 100px;
-        padding-bottom: 20px;
+        padding-bottom: 64px;
         overflow: hidden
     }
 
@@ -6378,9 +6387,18 @@ figcaption {
         max-width: 100%
     }
 
+    .footer-content.footer-content--nav{
+        margin-top: 0 !important;
+        margin-bottom: 16px;
+    }
+
+    .footer-wrapper{
+        align-items: flex-start;
+    }
+
     .work-featureimage.design {
-        width: 80%;
-        right: -58px
+        width: 100%;
+        right: -20px;
     }
 
     .work-featureimage.webflow {
@@ -6442,6 +6460,13 @@ figcaption {
 
     .resources-grid {
         width: 100%
+    }
+
+    .ada-trusted .cq-logo {
+        display: block;
+        align-self: flex-start !important;
+        max-height: 1.5rem;
+        width: auto;
     }
 
     .resources-grid._2-col {
@@ -6542,7 +6567,6 @@ figcaption {
 
     .footer-content {
         grid-row-gap: 20px;
-        grid-template-columns: 1fr;
         width: 100%
     }
 
@@ -6566,8 +6590,8 @@ figcaption {
     }
 
     .hero-title {
-        font-size: 2.1rem;
-        line-height: 150%
+        font-size: 2.2rem;
+        line-height: 140%;
     }
 
     .hero-text-wrapper {
@@ -6575,7 +6599,7 @@ figcaption {
     }
 
     .home-content-col{
-        grid-row-gap: 32px;
+        grid-row-gap: 20px;
         flex-direction: column;
     }
 
@@ -6647,7 +6671,6 @@ figcaption {
     }
 
     .hero-subtitle {
-        max-width: 280px;
         font-size: 1rem
     }
 
@@ -6692,7 +6715,7 @@ figcaption {
 
     .custom-text-1 {
         font-size: 1.2rem;
-        line-height: 1.9rem
+       line-height: 140%;
     }
 
     .amie-1 {
@@ -7013,15 +7036,15 @@ figcaption {
     background: #fff;
     border-radius: 32px;
     overflow: hidden;
-    border-top: 8px solid transparent;
+    border-top: 6px solid transparent;
     display: grid;
     grid-template-columns: 1fr
 }
 /* Border colors only — z-index is scoped to the sticky media query */
 .ada-trusted .company-card.card-wine  { border-top-color: #722f37 }
-.ada-trusted .company-card.card-green { border-top-color: #16a34a }
-.ada-trusted .company-card.card-pink  { border-top-color: #ec4899 }
-.ada-trusted .company-card.card-blue  { border-top-color: #3b82f6 }
+.ada-trusted .company-card.card-green { border-top-color: #722f37 }
+.ada-trusted .company-card.card-pink  { border-top-color: #722f37 }
+.ada-trusted .company-card.card-blue  { border-top-color: #722f37 }
 
 /* ── Media strip: mobile ratio; 768px+ uses 1/0.9 (narrow column) ── */
 .ada-trusted .card-logo-area {
@@ -7295,6 +7318,9 @@ figcaption {
   @media (max-width: 768px){
     .logo-grid{
       grid-template-columns: repeat(6, 1fr);
+      margin-top: 60px;
+      border-radius: 20px;
+      overflow: hidden;
     }
     .logo-grid .cell:nth-child(-n+3){
       grid-column: span 2;
@@ -7309,7 +7335,7 @@ figcaption {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 24px;
+    padding: 8px;
     border-right: 1px solid #e5e5e5;
     border-bottom: 1px solid #e5e5e5;
     background: #fff;

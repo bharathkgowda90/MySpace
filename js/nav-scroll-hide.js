@@ -10,7 +10,7 @@
   const nav = document.querySelector('.navbar.w-nav');
   if (!nav) return;
 
-  const SCROLL_THRESHOLD = 56;
+  const SCROLL_THRESHOLD = 40;
   const TOP_EPS = 8;
   let lastY = window.scrollY || document.documentElement.scrollTop;
   let ticking = false;
@@ -25,6 +25,11 @@
   function update() {
     ticking = false;
     const y = window.scrollY || document.documentElement.scrollTop;
+
+    if (document.body.classList.contains('cs-toc-scrolling')) {
+      lastY = y;
+      return;
+    }
 
     if (menuIsOpen()) {
       nav.classList.remove('nav--scroll-hidden');

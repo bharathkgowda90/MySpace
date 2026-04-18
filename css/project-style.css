@@ -301,14 +301,143 @@
   .kfd-icon { width: 140px; height: 140px; }
 }
 
+/* ======== ACKO app — information architecture cards ======== */
+
+.acko-ia-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 32px 0;
+}
+
+.acko-ia-card {
+  background: #f8efea;
+  border-radius: 20px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  min-height: 100%;
+}
+
+.acko-ia-card__label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  padding: 6px 14px 6px 10px;
+  margin-bottom: 16px;
+  line-height: 1;
+}
+
+.acko-ia-card__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.acko-ia-card__label--home {
+  background: #dbeafe;
+  color: #1e3a8a;
+}
+
+.acko-ia-card__label--home .acko-ia-card__dot {
+  background: #1d4ed8;
+}
+
+.acko-ia-card__label--myhome {
+  background: #d1fae5;
+  color: #14532d;
+}
+
+.acko-ia-card__label--myhome .acko-ia-card__dot {
+  background: #15803d;
+}
+
+.acko-ia-card__label--help {
+  background: #fef3c7;
+  color: #78350f;
+}
+
+.acko-ia-card__label--help .acko-ia-card__dot {
+  background: #b45309;
+}
+
+.acko-ia-card__quote {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--gray-1);
+  line-height: 1.35;
+  margin: 12px 0; 
+}
+
+.acko-ia-card__quote::before {
+  content: "\201C";
+}
+
+.acko-ia-card__quote::after {
+  content: "\201D";
+}
+
+.acko-ia-card__body {
+  font-size: 15px;
+  line-height: 140%;
+  color: var(--gray-2);
+  margin: 0;
+}
+
+.acko-ia-card__divider {
+  width: 100%;
+  height: 0;
+  margin: 20px 0 18px;
+  border: none;
+  border-top: 1px solid rgba(24, 24, 27, 0.12);
+}
+
+.acko-ia-card__pills {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.acko-ia-chip {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--gray-1);
+  background: rgb(241 225 213);
+  border-radius: 12px;
+  padding: 10px 12px;
+}
+
+@media (max-width: 768px) {
+  .acko-ia-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .acko-ia-card__quote {
+    font-size: 22px;
+  }
+}
+
 /* ======== Highlight / Blockquote ======== */
 
 .cs-highlight {
   margin: 40px 0;
-  padding: 40px;
+  padding: 32px;
   background: #f8efea;
   border-radius: 20px;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
   line-height: 130%;
   color: var(--untitled-ui-primary700);
@@ -317,7 +446,7 @@
 .cs-final-quote {
   background: #f8efea;
   border-radius: 20px;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
   line-height: 130%;
   color: var(--untitled-ui-primary700);
@@ -388,6 +517,13 @@
   margin: 40px 0;
 }
 
+.cs-impact-row-col-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin: 40px 0;
+}
+
 .cs-impact-item {
   display: flex;
   flex-direction: column;
@@ -402,7 +538,7 @@
 .cs-impact-number {
   font-size: 48px;
   font-weight: 800;
-  color: var(--untitled-ui-primary700);
+  color: #049247;
   line-height: 1.1;
   letter-spacing: -0.03em;
 }
@@ -425,28 +561,22 @@
 /* ======== Growth strategy funnel (ACKO app) ======== */
 
 .cs-growth-strategy-flow {
-  margin: 32px 0;
-  padding: 28px 24px;
-  background: var(--white);
-  border: 1px solid #e8e8e8;
-  border-radius: 20px;
-}
-
-.cs-growth-strategy-flow__top {
   display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-  justify-content: center;
-  gap: 12px 8px;
+  flex-direction: column;
+  align-items: center;
+  background: var(--white);
+  gap: 12px;
 }
 
 .cs-growth-strategy-flow__step {
-  flex: 1 1 140px;
-  min-width: 0;
-  max-width: 220px;
-  font-size: 20px;
+  width: 100%;
+  font-size: 18px;
   line-height: 1.45;
   color: var(--gray-2);
+  text-align: center;
+  padding: 20px 24px;
+  background: #f5f5f5;
+  border-radius: 20px;
 }
 
 .cs-growth-strategy-flow__step strong {
@@ -454,50 +584,91 @@
   font-weight: 700;
 }
 
-.cs-growth-strategy-flow__step--final {
-  max-width: none;
-  text-align: center;
-  margin: 0 auto;
-}
-
 .cs-growth-strategy-flow__arrow {
-  flex: 0 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  flex-shrink: 0;
+  align-self: center;
+  padding: 10px 0 6px;
   font-size: 22px;
   font-weight: 600;
   line-height: 1;
   color: var(--untitled-ui-primary700);
-  align-self: center;
-  padding: 0 4px;
 }
 
-.cs-growth-strategy-flow__arrow--solo {
-  display: block;
-  text-align: center;
-  padding: 16px 0 12px;
-  font-size: 22px;
+/* ======== ACKO app — habit loop table ======== */
+
+.acko-habit-loop-wrap {
+  margin: 28px 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  border: 1px solid #e8e8e8;
+  border-radius: 20px;
+  background: var(--white);
+}
+
+.acko-habit-loop-table {
+  width: 100%;
+  min-width: 640px;
+  border-collapse: collapse;
+  font-size: 15px;
+  line-height: 1.55;
+  text-align: left;
+}
+
+.acko-habit-loop-table th {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gray-1);
+  padding: 18px 20px 14px 24px;
+  border-bottom: 1px solid #e4e4e7;
+  text-align: left;
+  vertical-align: bottom;
+  background: var(--untitled-ui-gray50-501);
+}
+
+.acko-habit-loop-table th:first-child {
+  border-radius: 20px 0 0 0;
+}
+
+.acko-habit-loop-table th:last-child {
+  border-radius: 0 20px 0 0;
+}
+
+.acko-habit-loop-table td {
+  padding: 16px 20px 16px 24px;
+  border-bottom: 1px solid #e4e4e7;
+  color: #52525b;
+  vertical-align: top;
+}
+
+.acko-habit-loop-table td:first-child {
+  color: var(--gray-1);
+  font-weight: 500;
+}
+
+.acko-habit-loop-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.acko-habit-loop-reward-cell {
+  color: #52525b;
+}
+
+.acko-habit-loop-pill {
+  display: inline-block;
+  font-size: 11px;
   font-weight: 600;
-  color: var(--untitled-ui-primary700);
-}
-
-@media (max-width: 767px) {
-  .cs-growth-strategy-flow__top {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .cs-growth-strategy-flow__step {
-    flex: none;
-    max-width: 100%;
-    width: 100%;
-    text-align: center;
-  }
-
-  .cs-growth-strategy-flow__arrow {
-    padding: 8px 0;
-  }
+  letter-spacing: 0.02em;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: #e9f5ee;
+  color: #16794a;
+  margin-right: 6px;
+  vertical-align: middle;
+  line-height: 1.3;
 }
 
 /* ======== Full-Width Image Block ======== */
@@ -673,7 +844,7 @@
 
 .cs-dark-block {
   border-radius: 20px;
-  padding: 40px;
+  padding: 32px;
   margin: 32px 0;
 }
 
@@ -830,6 +1001,16 @@
   object-fit: cover;
 }
 
+.case-study-gallery-video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 36px;
+  overflow: hidden;
+  object-fit: contain;
+  background-color: #000000;
+}
+
 .heading-5 {
   color: var(--gray-1);
   margin-top: 0;
@@ -951,8 +1132,8 @@
 .hp-problem-card {
   background: var(--white);
   border-radius: 20px;
-  padding: 32px;
-  margin: 40px 0;
+  padding: 24px;
+  margin: 20px 0;
   border: 1px solid #e8e8e8;
 }
 
@@ -1013,6 +1194,19 @@
   font-size: 15px;
   line-height: 1.75;
   color: var(--gray-2);
+}
+
+.cs-growth-strategy-flow__step {
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+.cs-growth-strategy-flow{
+  gap: 4px;
+}
+
+.acko-ia-card{
+  padding: 20px;
 }
 
 /* ── Pull Quote ──────────────────────────────── */
@@ -1357,7 +1551,7 @@
   display: flex;
   align-items: center;
   gap: 14px;
-  padding: 24px;
+  padding: 16px 20px;
   border-bottom: 1px solid #e8e8e8;
   background: #f8f0ea;
 }
@@ -1381,7 +1575,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
-  padding: 24px;
+  padding: 20px;
 }
 
 .hp-decision-col-label {
@@ -1974,6 +2168,11 @@
 /* ── Active sidebar link state ── */
 .cs-side-nav.active { color: var(--gray-1); font-weight: 700; }
 
+/* Faster tap → click on mobile (less “lag” before handler runs) */
+a.cs-side-nav {
+  touch-action: manipulation;
+}
+
 /* ── ACKO Home Responsive ── */
 @media (max-width: 768px) {
   .ah-context-grid,
@@ -2198,7 +2397,7 @@
 
 .ch-biz__point-title {
   font-family: 'Satoshi', 'Inter Tight', sans-serif;
-  font-size: 0.9375rem;
+  font-size: 1.3rem;
   font-weight: 600;
   line-height: 1.3;
   color: #18181b;
@@ -2207,7 +2406,7 @@
 
 .ch-biz__point-text {
   font-family: 'Satoshi', 'Inter Tight', sans-serif;
-  font-size: 0.8125rem;
+  font-size: 1rem;
   line-height: 1.5;
   color: #52525b;
   margin: 0;
@@ -2229,7 +2428,7 @@
 
 .ch-biz__title {
   font-family: 'Satoshi', 'Inter Tight', sans-serif;
-  font-size: 1.125rem;
+  font-size: 1.3rem;
   font-weight: 600;
   line-height: 1.25;
   color: #18181b;
@@ -2238,7 +2437,7 @@
 
 .ch-biz__text {
   font-family: 'Satoshi', 'Inter Tight', sans-serif;
-  font-size: 0.9375rem;
+  font-size: 1rem;
   line-height: 1.55;
   color: #52525b;
   margin: 0;
@@ -2284,4 +2483,34 @@ img.ch-biz__figure {
     padding-bottom: 28px;
   }
 
+}
+
+/* In-page TOC targets: clear fixed nav + consistent scrollIntoView landing */
+.about-right-col [id],
+.cs-case-main [id] {
+  scroll-margin-top: 120px;
+}
+
+/* Footer: single row — Home, About, Work, Contact */
+.footer-content.footer-content--nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  grid-template-columns: none;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  margin-top: 80px;
+}
+
+.footer-block.footer-block--nav {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem 2rem;
+  width: 100%;
+}
+
+.footer-block--nav .footer-link {
+  margin-top: 0;
+  margin-bottom: 0;
 }
