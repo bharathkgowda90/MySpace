@@ -11,7 +11,8 @@ This portfolio uses:
 -   Single global stylesheet: `css/min.css`
 -   Webflow runtime scripts
 -   `parallax.js`
--   `main.js` (primary JS logic)
+-   `nav-scroll-hide.js` (navbar scroll behavior)
+-   `cs-side-nav-scroll.js` (case-study side navigation, where used)
 -   Optional CircleType
 -   Webflow class system (`w-nav`, `w-container`, etc.)
 
@@ -30,8 +31,10 @@ truth:
 -   `contact.html`
 -   `design.html`
 -   `css/min.css`
+-   `css/project-style.css` (portfolio and case-study layout additions)
 -   `parallax.js`
--   `main.js`
+-   `nav-scroll-hide.js`
+-   `cs-side-nav-scroll.js` (where case-study side nav is present)
 
 All new pages must replicate their structure.
 
@@ -87,13 +90,17 @@ Footer must remain identical across pages.
 
 ## C. CSS SYSTEM LOCK
 
-All styling must come from:
+Styling comes from:
 
     css/min.css
 
+and, on pages that already include it:
+
+    css/project-style.css
+
 ### Strict rules:
 
--   No new CSS files
+-   No additional ad-hoc CSS files beyond `min.css` and `project-style.css`
 -   No inline styles
 -   No new font imports
 -   No new color hex values
@@ -136,9 +143,10 @@ Never reorder. Never duplicate.
 
 ## F. JAVASCRIPT RULES
 
-Primary JS file:
+Primary JS files:
 
-    main.js
+    nav-scroll-hide.js
+    cs-side-nav-scroll.js   (case-study side nav only)
 
 ### Do NOT:
 
@@ -148,8 +156,8 @@ Primary JS file:
 -   Add second navbar scroll effect
 -   Reimplement dropdown behavior
 
-If new behavior is required: - Extend `main.js` - Do not create
-conflicting logic
+If new behavior is required: extend these files (or add one clearly scoped
+script) — do not create conflicting duplicate logic.
 
 ------------------------------------------------------------------------
 

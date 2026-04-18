@@ -14,7 +14,7 @@ This portfolio website is designed to present product design work in a clean, pr
 - **About Section**: Professional bio, expertise areas, and work experience
 - **Design Process**: Clear visualization of the design methodology
 - **Contact Section**: Easy-to-find contact information and social links
-- **Case Study Template**: Detailed project page template for comprehensive case studies
+- **Case Study Pages**: Detailed project pages under `Works/` for comprehensive case studies
 - **Accessibility**: Built with accessibility best practices in mind
 - **Performance Optimized**: Fast loading times and optimized assets
 
@@ -46,14 +46,19 @@ This portfolio website is designed to present product design work in a clean, pr
 ```
 portfolio/
 ├── index.html              # Main portfolio page
-├── project-template.html   # Case study template
+├── about.html, contact.html, design.html
+├── Works/                  # Case study and project pages (e.g. design.html, happay.html)
 ├── css/
-│   ├── styles.css          # Main stylesheet
-│   └── project.css         # Case study page styles
+│   ├── min.css             # Webflow export base styles
+│   └── project-style.css   # Shared portfolio / case-study layout and overrides
 ├── js/
-│   └── script.js           # Interactive functionality
-├── images/                 # Image assets (add your own)
-└── README.md              # This file
+│   ├── parallax.js         # Parallax for [data-parallax] elements
+│   ├── nav-scroll-hide.js  # Navbar scroll behavior
+│   └── cs-side-nav-scroll.js  # Case-study side navigation (where used)
+├── images/                 # Image assets
+├── README.md
+├── PORTFOLIO_LAYOUT_SYSTEM.md
+└── IMAGES_README.md
 ```
 
 ## 🎯 Customization
@@ -90,19 +95,11 @@ portfolio/
    - Technology tags
    - Link to case study
 
-3. For detailed case studies, use `project-template.html` as a starting point
+3. For detailed case studies, duplicate an existing page under `Works/` and adjust content
 
 ### Customize Colors
 
-Update CSS variables in `css/styles.css` (lines 13-18):
-
-```css
-:root {
-    --primary-color: #2d3748;
-    --accent-color: #667eea;
-    /* Modify other color variables */
-}
-```
+Prefer existing Webflow classes and tokens from `css/min.css`. For portfolio-wide tweaks, use `css/project-style.css` and match existing patterns (CSS variables and section classes where defined).
 
 ### Add Images
 
