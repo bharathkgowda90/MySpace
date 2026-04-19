@@ -1,7 +1,7 @@
 /**
  * Site header: hide .navbar.w-nav when scrolling down, show when scrolling up.
  * Styles live in css/min.css (.nav--scroll-hidden).
- * Include before </body> on every page: <script src="/js/nav-scroll-hide.js"></script>
+ * Include before </body> on every page (path varies by page depth): e.g. <script src="js/nav-scroll-hide.js"></script> or ../js/nav-scroll-hide.js
  * (use path relative to site root so it works from /Works/... too)
  */
 (() => {
