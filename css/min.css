@@ -6398,12 +6398,20 @@ figcaption {
 
     .work-featureimage.design {
         width: 100%;
-        right: -20px;
+        right: -40px;
     }
 
     .work-featureimage.webflow {
         width: 100%;
         right: -56px
+    }
+
+    .card-expertise-light{
+        padding: 24px 24px 0;
+    }
+
+    .ada-trusted .company-card.card-wine{
+        border-top: none
     }
 
     .service-text-wrapper {
@@ -7229,7 +7237,8 @@ figcaption {
 
 /* ── Tablet (768px+): 2-col card, sticky stack ── */
 @media (min-width:768px) {
-    .ada-trusted { padding: 0 2rem }
+    .ada-trusted { padding: 2rem 2rem }
+    .ch-biz {padding: 2rem 2rem}
     .ada-trusted .trusted-header { margin-bottom: 4rem }
     .ada-trusted .trusted-title { font-size: 2.5rem }
 
